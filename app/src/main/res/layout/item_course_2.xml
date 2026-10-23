@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="6dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="3-4节"
+        android:textSize="13sp"
+        android:textColor="#666"/>
+
+    <TextView android:id="@+id/mon2"  android:layout_width="0dp" android:layout_weight="1" android:layout_height="90dp" android:gravity="center" android:background="#CEF3E8" android:layout_margin="2dp" android:padding="6dp" android:lines="3"/>
+    <TextView android:id="@+id/tue2"  android:layout_width="0dp" android:layout_weight="1" android:layout_height="90dp" android:gravity="center" android:background="#CEF3E8" android:layout_margin="2dp" android:padding="6dp" android:lines="3"/>
+    <TextView android:id="@+id/wed2"  android:layout_width="0dp" android:layout_weight="1" android:layout_height="90dp" android:gravity="center" android:background="#CEF3E8" android:layout_margin="2dp" android:padding="6dp" android:lines="3"/>
+    <TextView android:id="@+id/thu2"  android:layout_width="0dp" android:layout_weight="1" android:layout_height="90dp" android:gravity="center" android:background="#CEF3E8" android:layout_margin="2dp" android:padding="6dp" android:lines="3"/>
+    <TextView android:id="@+id/fri2"  android:layout_width="0dp" android:layout_weight="1" android:layout_height="90dp" android:gravity="center" android:background="#CEF3E8" android:layout_margin="2dp" android:padding="6dp" android:lines="3"/>
+
+</LinearLayout>

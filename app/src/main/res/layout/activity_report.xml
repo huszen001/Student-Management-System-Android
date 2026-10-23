@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"/>
+
+        <!-- 选择课程 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择要统计的课程"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/sp_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="#fff"/>
+
+        <!-- 课程整体统计 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📊 全课程统计"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_total_courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总课程数：0"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_total_students"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总选课人次：0"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_avg_students"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平均选课人数：0.0"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_most_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最热门课程：暂无"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_least_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最冷门课程：暂无"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_full_courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已满课程数：0"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_available_courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可报课程数：0"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- 单课程成绩统计 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📈 单课程成绩统计"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/tv_avg_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平均分：--"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_max_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高分：--"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_min_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最低分：--"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_fail_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="挂科率：--"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

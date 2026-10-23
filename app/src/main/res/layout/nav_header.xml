@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="?attr/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!-- 用户头像（圆形样式，不依赖外部文件） -->
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/tu"
+        android:contentDescription="用户头像"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerInside"/>
+
+    <!-- 用户名 -->
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <!-- 用户类型 -->
+    <TextView
+        android:id="@+id/tv_user_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="用户类型"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.studentmanager">
+    <!-- Android 12 及以下 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+    <!-- Android 13+ 用于访问媒体文件 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/jd"
+        android:roundIcon="@drawable/jilinuniversity"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentManager"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CourseListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddCourseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditCourseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CourseApprovalsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".StudentManagementActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddStudentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditStudentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ReportActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GradeListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddGradeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditGradeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MyCoursesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MyGradeActivity"
+            android:exported="false" />
+
+        <activity android:name=".CourseTableActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
